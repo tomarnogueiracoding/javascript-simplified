@@ -1,4 +1,7 @@
-let a = null;
-let b = undefined;
+function helloName(name) {
+  return 'Hello ' + name;
+}
 
-console.log(a == b);
+let myName = helloName('Miguel');
+
+console.log(myName);
