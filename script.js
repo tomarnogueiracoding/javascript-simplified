@@ -1,7 +1,9 @@
-function helloName(name) {
-  return 'Hello ' + name;
+function printVariable(variable) {
+  console.log(variable);
 }
 
-let myName = helloName('Miguel');
+function printName(name, callback) {
+  callback('Hello ' + name)
+}
 
-console.log(myName);
+printName('Miguel', printVariable)
