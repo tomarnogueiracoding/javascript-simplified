@@ -1,9 +1,18 @@
-function printVariable(variable) {
+function doStuff(a, b, name) {
+  print(sum(a, b));
+  print(sayHi(name));
+}
+
+function print(variable) {
   console.log(variable);
 }
 
-function printName(name, callback) {
-  callback('Hello ' + name)
+function sum(a, b) {
+  return a + b;
 }
 
-printName('Miguel', printVariable)
+function sayHi(name) {
+  return 'Hi ' + name;
+}
+
+doStuff(3, 7, 'Miguel');
