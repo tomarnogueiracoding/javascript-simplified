@@ -1,18 +1,27 @@
-function doStuff(a, b, name) {
-  print(sum(a, b));
-  print(sayHi(name));
+let c = 3
+
+{
+  let a = 1
+  console.log(a)
+  console.log(c)
+  {
+    let b = 2
+    console.log(a)
+    console.log(b)
+    console.log(c)
+
+    {
+      let d = 4
+      console.log(a)
+      console.log(b)
+      console.log(c)
+      console.log(d)
+    }
+    
+  }
+
 }
 
-function print(variable) {
-  console.log(variable);
-}
+console.log(c)
 
-function sum(a, b) {
-  return a + b;
-}
 
-function sayHi(name) {
-  return 'Hi ' + name;
-}
-
-doStuff(3, 7, 'Miguel');
