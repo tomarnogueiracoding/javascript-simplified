@@ -1,9 +1,13 @@
-function printVariable(variable) {
-  console.log(variable)
+function createUser(name, age) {
+  return { name: name, age: age }
 }
 
-function printName(name, callback) {
-  callback('Hello ' + name)
+function User(name, age) {
+  this.name = name
+  this.age = age
+  this.isHuman = true
 }
 
-printName('Miguel', printVariable)
+const user1 = new User('Miguel', 48)
+
+console.log(user1)
