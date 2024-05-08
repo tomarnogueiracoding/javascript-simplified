@@ -23,11 +23,10 @@ form.addEventListener('submit', (e) => {
   })
 
   //    2. Get all selected answers (use the `checked` property on the input to determine if it is selected or not)
-  //answers.filter((answer) => answer.check)
   const checkedAnswers = answers.filter((answer) => answer.checked)
 
   //    3. Loop through the selected answer to see if they are correct or not (Check the value of the answer to see if it is the string "true")
-  const correctAnswers = checkedAnswers.forEach((answer) => {
+  checkedAnswers.forEach((answer) => {
     const isCorrect = answer.value === 'true'
     const questionItem = answer.closest('.question-item')
     console.log(questionItem)
